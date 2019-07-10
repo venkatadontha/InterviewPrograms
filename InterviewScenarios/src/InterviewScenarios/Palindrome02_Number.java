@@ -2,7 +2,7 @@ package InterviewScenarios;
 
 import java.util.Scanner;
 
-public class PalindromeNumber {
+public class Palindrome02_Number {
 	
 	public static void main(String[] args)
 	{
