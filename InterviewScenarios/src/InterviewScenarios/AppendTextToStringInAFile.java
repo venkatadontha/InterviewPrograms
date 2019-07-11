@@ -14,7 +14,7 @@ public class AppendTextToStringInAFile {
 	{
 		try{
 			File f = new File("C:\\Users\\Vivaan\\Desktop\\AppendText.txt");
-			write("This text has been appended", f);
+			write(" This text has been appended", f);
 		}
 		catch(IOException e)
 		{

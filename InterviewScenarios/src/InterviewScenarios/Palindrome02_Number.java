@@ -1,29 +1,39 @@
 package InterviewScenarios;
 
-import java.util.Scanner;
-
 public class Palindrome02_Number {
 	
-	public static void main(String[] args)
+	public static void isPalindrome(int num)
 	{
-		int rem, rev=0;
-		Scanner sc = new Scanner(System.in);
-		int number=sc.nextInt();
-		int temp=number;
-		while(temp!=0)
+		System.out.println("Given number is : " + num);
+		int rem=0;
+		int sum=0;
+		int temp;
+		
+		temp=num;
+		
+		while (num > 0)
 		{
-			rem=temp%10;
-			rev=rev*10+rem;
-			temp=temp/10;
+			rem = num%10;
+			sum = (sum*10)+rem;
+			num = num/10;
 		}
-		if (rev==number)
+		
+		if (temp==sum)
 		{
-			System.out.println("Palindrome");
+			System.out.println("is Palindrome number");
 		}
 		else
 		{
-			System.out.println("Not Palindrome");
+				System.out.println("is not Palindrome number");
 		}
+	}
+	
+	public static void main(String[] args)
+	{
+		isPalindrome(151);
+		isPalindrome(12321);
+		isPalindrome(123454321);
+		isPalindrome(1234567890);
 	}
 
 }
