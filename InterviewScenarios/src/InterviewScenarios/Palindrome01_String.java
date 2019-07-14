@@ -17,10 +17,10 @@ public class Palindrome01_String {
 		}
 		if(original.equals(reverse))
 		{
-			System.out.println("Given Input Text / String is Palindrome");
+			System.out.println("Given Input Text " + original + " String is Palindrome");
 		}else
 		{
-			System.out.println("Given Input Text / String is not Palindrome");
+			System.out.println("Given Input Text " + original + " String is not Palindrome");
 		}
 	}
 

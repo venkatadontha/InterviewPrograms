@@ -12,7 +12,7 @@ public class FinalReverseWithoutUsingStringMethods1 {
         String str = "Kousalya Jampana";
         char chars[] = str.toCharArray();  // converted to character array and printed in reverse order
         for(int i= chars.length-1; i>=0; i--) {
-            System.out.print(chars[i]);
+        System.out.print(chars[i]);
         }
     }
 }
